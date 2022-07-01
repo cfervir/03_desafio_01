@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &--color {
+    display: flex;
+    align-content: center;
+  }
+}

@@ -1,0 +1,53 @@
+@use '../abstracts' as *;
+
+.card {
+  background-color: $dark-color;
+  color: $main-color;
+  border-radius: 1em;
+  max-width: 20rem;
+  text-align: center;
+  padding: 1em;
+
+  &__img {
+    max-width: 10rem;
+    align-self: center;
+    transition: transform .2s ease-in;
+  }
+
+  &__img:hover,
+  &__img:focus {
+    transform: scale(1.05);
+  }
+
+  &__product {
+    font-size: 0.625rem;
+    padding: 0.5em;
+  }
+
+  &__input {
+    align-self: center;
+    max-width: 80%;
+  }
+
+  &__input + &__input {
+    margin: 0.625em;
+  }
+
+  &__value {
+    font-weight: 400;
+    margin-bottom: 0.625em;
+  }
+
+  &__btn {
+    background-color: $accent-dark-color;
+    color: $main-color;
+    cursor: pointer;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    transform: scale(1.12);
+    background-color: $accent-color;
+  }
+
+}

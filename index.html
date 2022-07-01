@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 01 - Javascript para la Web</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/e190a6dfc5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container container--flex">
+
+    <main class="main">
+
+      <div class="card container--flex">
+
+        <img class="card__img" src="assets/images/buds.png" alt=">Google Pixel Buds 2">
+        <p class="card__product">Google Pixel Buds 2</p>
+        <input class="card__input" id="amount" type="number" placeholder="Cantidad">
+        <input class="card__input" id="color" type="text" placeholder="Color">
+        <h4 class="card__value">Precio: <strong>$<span id="value">129.990</span></strong></h4>
+        <button class="btn card__btn" id="result" onclick="getResult()">Calcular</button>
+
+      </div>
+
+    </main>
+
+    <section class="section">
+
+      <div class="container--flex results">
+        <p>Total: <span id="resultTotal"></span></p>
+        <p>Cantidad: <span id="resultAmount"></span></p>
+        <div class="container--color">
+          <p>Color:</p>
+          <span class="section__color" id="resultColor"></span>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
